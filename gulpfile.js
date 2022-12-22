@@ -12,7 +12,7 @@ var gulp = require("gulp"),
 var sassFiles = "assets/scss/style.scss",
   cssDest = "assets/css/.";
 
-var jsFiles = "assets/js/*.js";
+var jsFiles = "assets/js/partial/*.js",
 jsDest = "assets/js/.";
 
 function style() {
