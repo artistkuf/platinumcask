@@ -7881,10 +7881,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  color: #000000; }
+  color: #000000;
+  background-color: #8c8d8e;
+  height: 3000px; }
 
-.main__nav .navbar-item {
-  text-transform: uppercase;
-  font-weight: 700; }
+.main__nav {
+  height: 75px;
+  background-color: transparent;
+  transition: background-color 0.5s; }
+  .main__nav .navbar-item, .main__nav .navbar-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ee368c; }
+    .main__nav .navbar-item::after, .main__nav .navbar-link::after {
+      border-color: #ee368c;
+      margin-top: -0.5em;
+      right: 1.5em; }
+
+.nav__scrolled {
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

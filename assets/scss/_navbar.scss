@@ -1,0 +1,21 @@
+.main__nav{
+   height: 75px;
+   background-color: transparent;
+   transition: background-color 0.5s;
+   .navbar-item , .navbar-link{
+      text-transform: uppercase;
+      font-weight: $bold;
+      color: $pink;
+      &::after{border-color: $pink;margin-top: -0.5em;right: 1.5em;}
+   }
+}
+
+.nav__scrolled {
+   background-color: $white;
+ }
+
+ 
+ 
+ 
+ 
+ 
