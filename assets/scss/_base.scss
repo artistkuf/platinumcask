@@ -1,0 +1,42 @@
+//Font
+$fontFamily: "Josefin Sans", sans-serif;
+$fontSize: 16px;
+$bold: 700;
+
+//Color
+$pink: #ee368c;
+$black: #000000;
+$white: #ffffff;
+$gray: #8c8d8e;
+$light-gray: #f0f0f0;
+
+//Base Style
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $black;
+}
+
+//Mixin Media Query
+@mixin media-query($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+}
+
+
+// body{
+//    @include media-query(medium){
+//       background-color: #000000;
+//    }
+// }
