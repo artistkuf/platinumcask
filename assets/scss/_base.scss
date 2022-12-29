@@ -1,12 +1,14 @@
 //Font
 $fontFamily: "Josefin Sans", sans-serif;
-$fontSize: 16px;
+$fontSize: 13px;
 $bold: 700;
+$light: 400;
 
 //Color
 $pink: #ee368c;
 $black: #000000;
 $white: #ffffff;
+$dark-gray: #323232;
 $gray: #8c8d8e;
 $light-gray: #f0f0f0;
 
@@ -15,27 +17,30 @@ body {
   font-family: $fontFamily;
   font-size: $fontSize;
   color: $black;
-  background-color: $gray;
+  background-color: $light-gray;
   height: 3000px;
 }
 
-//Mixin Media Query
+//Mixin Media Queries
 @mixin media-query($breakpoint) {
-  @if $breakpoint == small {
+  @if $breakpoint == "xsmobile" {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if $breakpoint == "mobile" {
     @media (max-width: 767px) {
       @content;
     }
-  } @else if $breakpoint == medium {
-    @media (min-width: 768px) and (max-width: 991px) {
+  } @else if $breakpoint == "tablet" {
+    @media (max-width: 1023px) {
       @content;
     }
-  } @else if $breakpoint == large {
-    @media (min-width: 992px) {
+  } @else if $breakpoint == "desktop" {
+    @media (min-width: 1024px) {
       @content;
     }
   }
 }
-
 
 // body{
 //    @include media-query(medium){
