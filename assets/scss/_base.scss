@@ -1,6 +1,7 @@
 //Font
 $fontFamily: "Josefin Sans", sans-serif;
 $fontSize: 13px;
+$HeadSize: 20px;
 $bold: 700;
 $light: 400;
 
@@ -17,8 +18,15 @@ body {
   font-family: $fontFamily;
   font-size: $fontSize;
   color: $black;
-  background-color: $light-gray;
   height: 3000px;
+
+  a{
+    font-weight: $bold;
+    color: $pink;
+    &:hover{
+      color: $gray;
+    }
+  }
 }
 
 //Mixin Media Queries

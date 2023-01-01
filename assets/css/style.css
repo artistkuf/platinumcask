@@ -7882,8 +7882,12 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 13px;
   color: #000000;
-  background-color: #f0f0f0;
   height: 3000px; }
+  body a {
+    font-weight: 700;
+    color: #ee368c; }
+    body a:hover {
+      color: #8c8d8e; }
 
 .main__nav {
   height: 75px;
@@ -7976,5 +7980,18 @@ body {
 
 .nav__scrolled {
   background-color: #ffffff; }
+
+.main_footer {
+  background-color: #f0f0f0;
+  color: #8c8d8e; }
+  .main_footer h3 {
+    font-weight: 700;
+    color: #ee368c;
+    font-size: 20px; }
+  .main_footer p strong {
+    color: #8c8d8e; }
+  .main_footer .is-divider {
+    background-color: #ee368c;
+    height: 1px; }
 
 /*# sourceMappingURL=style.css.map */
