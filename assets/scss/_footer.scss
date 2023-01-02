@@ -1,6 +1,7 @@
 .main_footer{
    background-color: $light-gray;
    color: $gray;
+   padding-bottom: 2em;
    h3{
       font-weight: $bold;
       color: $pink;
@@ -12,5 +13,27 @@
    .is-divider{
       background-color: $pink;
       height: 1px;
+   }
+   .footer_link{
+      margin-top: 3em;
+      a{
+         font-size: $fontSize;
+         margin: 0px 20px;
+         display: inline-block;
+         line-height: 30px;
+      }
+   }
+
+   @include media-query(mobile){
+      p{
+         text-align: left;
+      }      
+      .footer_link{
+         text-align: left;
+         a{
+            display: block;
+            margin: 0;
+         }
+      }
    }
 }
