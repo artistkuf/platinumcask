@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Revamp website Project for Platinumcask",
   "devDependencies": {
-    "bulma": "^0.9.4",
     "cssnano": "^5.1.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
