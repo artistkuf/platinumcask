@@ -1,8 +1,8 @@
 var swiperAnimation = new SwiperAnimation();
 var HeroBannerSwiper = new Swiper(".swiper__herobanner", {
-  lazy: true,
+  //lazy: true,
   loop: true,
-  speed: 500,
+  speed: 2000,
   effect: "fade",
   grabCursor: true,
   autoplay: {

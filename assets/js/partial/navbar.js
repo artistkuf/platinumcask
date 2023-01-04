@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Transition when scrolling
-  window.addEventListener("scroll", function () {
-    var navbar = document.getElementById("main_nav");
-    if (window.scrollY > 50) {
-      navbar.classList.add("nav__scrolled");
-    } else {
-      navbar.classList.remove("nav__scrolled");
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   var navbar = document.getElementById("main_nav");
+  //   if (window.scrollY > 50) {
+  //     navbar.classList.add("nav__scrolled");
+  //   } else {
+  //     navbar.classList.remove("nav__scrolled");
+  //   }
+  // });
 });

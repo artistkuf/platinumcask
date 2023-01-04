@@ -9,8 +9,7 @@ body {
       color: #8c8d8e; }
 
 .main__nav {
-  height: 75px;
-  background-color: transparent;
+  background-color: #ffffff;
   transition: background-color 0.5s; }
   .main__nav .navbar-end {
     margin-right: 1em; }
@@ -107,7 +106,7 @@ body {
   .main_footer h3 {
     font-weight: 700;
     color: #ee368c;
-    font-size: 60px; }
+    font-size: 18px; }
   .main_footer p strong {
     color: #8c8d8e; }
   .main_footer .is-divider {
