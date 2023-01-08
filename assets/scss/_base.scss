@@ -2,8 +2,6 @@
 $fontFamily: "Josefin Sans", sans-serif;
 $fontSize: 13px;
 $TitleSize: 18px;
-$SubHeadSize: 30px;
-$HeadSize: 60px;
 $bold: 700;
 $light: 400;
 $TextShadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
@@ -15,6 +13,41 @@ $white: #ffffff;
 $dark-gray: #323232;
 $gray: #8c8d8e;
 $light-gray: #f0f0f0;
+
+
+//Mixin Style
+@mixin HeadSize() {
+  font-size: 60px;
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
+}
+
+@mixin TitleSize() {
+  font-size: 30px;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+@mixin ButtonTemp() {
+  border: 2px solid $pink;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: $fontSize;
+  color: $pink;
+  padding: 8px 15px;
+  border-radius: 1em;
+  background-color: $white;
+  letter-spacing: 0.1em;
+  &:hover {
+    background-color: $pink;
+    color: $white;
+    transition: background-color 0.5s;
+  }
+}
 
 //Base Style
 body {
@@ -28,7 +61,13 @@ body {
       color: $gray;
     }
   }
+  p{
+    font-size: $fontSize;
+    line-height: 2em;
+    margin: 0.5em 0;
+  }
 }
+
 
 //Mixin Media Queries
 @mixin media-query($breakpoint) {
@@ -38,6 +77,8 @@ body {
     }
   } @else if $breakpoint == "mobile" {
     @media (max-width: 767px) {
+      $HeadSize-pc: 40px;
+      $fontSize: 10px;
       @content;
     }
   } @else if $breakpoint == "tablet" {
@@ -50,6 +91,7 @@ body {
     }
   }
 }
+
 
 // body{
 //    @include media-query(mobile){      

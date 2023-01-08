@@ -35,18 +35,7 @@
     }
 
     .button {
-      border: 2px solid $pink;
-      text-transform: uppercase;
-      font-weight: $bold;
-      font-size: $fontSize;
-      color: $pink;
-      padding: 0px 10px;
-      background-color: $white;
-      &:hover {
-        background-color: $pink;
-        color: $white;
-        transition: background-color 0.5s;
-      }
+      @include ButtonTemp();
     }
 
     .navbar-dropdown {

@@ -7,6 +7,10 @@ body {
     color: #ee368c; }
     body a:hover {
       color: #8c8d8e; }
+  body p {
+    font-size: 13px;
+    line-height: 2em;
+    margin: 0.5em 0; }
 
 .main__nav {
   background-color: #ffffff;
@@ -46,8 +50,10 @@ body {
       font-weight: 700;
       font-size: 13px;
       color: #ee368c;
-      padding: 0px 10px;
-      background-color: #ffffff; }
+      padding: 8px 15px;
+      border-radius: 1em;
+      background-color: #ffffff;
+      letter-spacing: 0.1em; }
       .main__nav .navbar-item .button:hover,
       .main__nav .navbar-link .button:hover {
         background-color: #ee368c;
@@ -148,22 +154,145 @@ body {
     content: ""; }
   .swiper__herobanner .swiper-slide .swiper__content {
     z-index: 20;
-    margin: 0px 20px; }
+    margin: 0px 40px; }
     .swiper__herobanner .swiper-slide .swiper__content h2 {
       font-size: 60px;
       color: #ffffff;
       font-weight: 700;
       text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25); }
+      @media (max-width: 767px) {
+        .swiper__herobanner .swiper-slide .swiper__content h2 {
+          font-size: 40px; } }
     .swiper__herobanner .swiper-slide .swiper__content p {
       font-size: 30px;
       color: #ffffff;
       font-weight: 700;
       text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25); }
+      @media (max-width: 767px) {
+        .swiper__herobanner .swiper-slide .swiper__content p {
+          font-size: 20px; } }
+    @media (max-width: 767px) {
+      .swiper__herobanner .swiper-slide .swiper__content {
+        margin: 0px 20px; }
+        .swiper__herobanner .swiper-slide .swiper__content h2 {
+          font-size: 60px; } }
+    @media (max-width: 767px) and (max-width: 767px) {
+      .swiper__herobanner .swiper-slide .swiper__content h2 {
+        font-size: 40px; } }
+    @media (max-width: 767px) {
+        .swiper__herobanner .swiper-slide .swiper__content p {
+          font-size: 30px; } }
+    @media (max-width: 767px) and (max-width: 767px) {
+      .swiper__herobanner .swiper-slide .swiper__content p {
+        font-size: 20px; } }
 
 .swiper__herobanner .swiper-pagination-bullet {
   background: #ee368c;
   margin: 0 2em;
   width: 10px;
   height: 10px; }
+
+.sec__invwhiskey {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .sec__invwhiskey .blk__invwhiskey {
+    max-width: 500px; }
+    .sec__invwhiskey .blk__invwhiskey h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ee368c; }
+      @media (max-width: 767px) {
+        .sec__invwhiskey .blk__invwhiskey h2 {
+          font-size: 20px; } }
+    .sec__invwhiskey .blk__invwhiskey p {
+      color: #ffffff; }
+    .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey {
+      margin: 2em 0; }
+      .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a {
+        border: 2px solid #ee368c;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ee368c;
+        padding: 8px 15px;
+        border-radius: 1em;
+        background-color: #ffffff;
+        letter-spacing: 0.1em;
+        background-color: black;
+        border: 2px solid #ffffff;
+        color: #ffffff; }
+        .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a:hover {
+          background-color: #ee368c;
+          color: #ffffff;
+          transition: background-color 0.5s; }
+        .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a:hover {
+          background-color: #323232; }
+  @media (max-width: 767px) {
+    .sec__invwhiskey {
+      background-position: revert; } }
+
+.sec__caskbottles .blk__caskbottles {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .sec__caskbottles .blk__caskbottles .ele__caskbottles {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex; }
+    .sec__caskbottles .blk__caskbottles .ele__caskbottles img {
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(1) {
+        z-index: 1;
+        margin-right: -60px;
+        height: 340px; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(2) {
+        z-index: 2;
+        margin-right: -50px;
+        height: 380px; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(3) {
+        z-index: 3;
+        height: 420px; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(4) {
+        z-index: 2;
+        margin-left: -50px;
+        height: 380px; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(5) {
+        z-index: 1;
+        margin-left: -60px;
+        height: 340px; }
+
+.sec__caskbottles .caskbottles__content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ee368c;
+  padding-bottom: 1em; }
+  @media (max-width: 767px) {
+    .sec__caskbottles .caskbottles__content h2 {
+      font-size: 20px; } }
+
+.sec__caskbottles .caskbottles__content .caskbottles__detail {
+  margin-top: 3em;
+  margin-left: 2em; }
+  .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles {
+    margin-top: 2em; }
+    .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a {
+      border: 2px solid #ee368c;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      color: #ee368c;
+      padding: 8px 15px;
+      border-radius: 1em;
+      background-color: #ffffff;
+      letter-spacing: 0.1em; }
+      .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a:hover {
+        background-color: #ee368c;
+        color: #ffffff;
+        transition: background-color 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
