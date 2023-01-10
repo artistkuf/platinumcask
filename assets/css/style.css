@@ -400,4 +400,33 @@ body {
         .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a {
           padding: 8px 15px; } }
 
+.sec__seenin .seenin__title {
+  text-align: center; }
+  .sec__seenin .seenin__title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ee368c;
+    border-bottom: 2px solid #ee368c;
+    line-height: 0.1em;
+    margin: 10px 0 10px 0; }
+    @media (max-width: 767px) {
+      .sec__seenin .seenin__title h2 {
+        font-size: 20px; } }
+    .sec__seenin .seenin__title h2 span {
+      background: #ffffff;
+      padding: 0 10px; }
+
+.sec__seenin .blk__seein {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .sec__seenin .blk__seein .badge__icon {
+    width: 10%;
+    margin: 1em 1em; }
+  @media (max-width: 767px) {
+    .sec__seenin .blk__seein .badge__icon {
+      width: 20%; } }
+
 /*# sourceMappingURL=style.css.map */
