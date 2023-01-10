@@ -2,10 +2,14 @@
    background-color: $light-gray;
    color: $gray;
    padding-bottom: 2em;
+   background-image: url('/assets/img/bg-footer.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: right bottom;
    h3{
       font-weight: $bold;
       color: $pink;
-      font-size: $TitleSize;
+      @include TopicSize();
    }
    p{
       strong{color: $gray;}

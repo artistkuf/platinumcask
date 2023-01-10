@@ -108,11 +108,18 @@ body {
 .main_footer {
   background-color: #f0f0f0;
   color: #8c8d8e;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  background-image: url("/assets/img/bg-footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom; }
   .main_footer h3 {
     font-weight: 700;
     color: #ee368c;
     font-size: 18px; }
+    @media (max-width: 767px) {
+      .main_footer h3 {
+        font-size: 15px; } }
   .main_footer p strong {
     color: #8c8d8e; }
   .main_footer .is-divider {
@@ -154,7 +161,7 @@ body {
     content: ""; }
   .swiper__herobanner .swiper-slide .swiper__content {
     z-index: 20;
-    margin: 0px 40px; }
+    margin: 0px 4em; }
     .swiper__herobanner .swiper-slide .swiper__content h2 {
       font-size: 60px;
       color: #ffffff;
@@ -198,12 +205,12 @@ body {
   background-repeat: no-repeat; }
   .sec__invwhiskey .blk__invwhiskey {
     max-width: 500px; }
-    .sec__invwhiskey .blk__invwhiskey h2 {
+    .sec__invwhiskey .blk__invwhiskey h1 {
       font-size: 30px;
       font-weight: 700;
       color: #ee368c; }
       @media (max-width: 767px) {
-        .sec__invwhiskey .blk__invwhiskey h2 {
+        .sec__invwhiskey .blk__invwhiskey h1 {
           font-size: 20px; } }
     .sec__invwhiskey .blk__invwhiskey p {
       color: #ffffff; }
@@ -232,67 +239,165 @@ body {
     .sec__invwhiskey {
       background-position: revert; } }
 
-.sec__caskbottles .blk__caskbottles {
-  padding: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .sec__caskbottles .blk__caskbottles .ele__caskbottles {
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-around;
-    display: flex; }
-    .sec__caskbottles .blk__caskbottles .ele__caskbottles img {
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out; }
-      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(1) {
-        z-index: 1;
-        margin-right: -60px;
-        height: 340px; }
-      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(2) {
-        z-index: 2;
-        margin-right: -50px;
-        height: 380px; }
-      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(3) {
-        z-index: 3;
-        height: 420px; }
-      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(4) {
-        z-index: 2;
-        margin-left: -50px;
-        height: 380px; }
-      .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(5) {
-        z-index: 1;
-        margin-left: -60px;
-        height: 340px; }
+.sec__caskbottles {
+  background-image: url("/assets/img/bg-single-cask.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom; }
+  .sec__caskbottles .blk__caskbottles {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .sec__caskbottles .blk__caskbottles .ele__caskbottles {
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-around;
+      display: flex; }
+      .sec__caskbottles .blk__caskbottles .ele__caskbottles img {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out; }
+        .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(1) {
+          z-index: 1;
+          margin-right: -60px;
+          height: 340px; }
+        .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(2) {
+          z-index: 2;
+          margin-right: -50px;
+          height: 380px; }
+        .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(3) {
+          z-index: 3;
+          height: 420px; }
+        .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(4) {
+          z-index: 2;
+          margin-left: -50px;
+          height: 380px; }
+        .sec__caskbottles .blk__caskbottles .ele__caskbottles img:nth-of-type(5) {
+          z-index: 1;
+          margin-left: -60px;
+          height: 340px; }
+  .sec__caskbottles .caskbottles__content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ee368c;
+    padding-bottom: 1em; }
+    @media (max-width: 767px) {
+      .sec__caskbottles .caskbottles__content h2 {
+        font-size: 20px; } }
+  .sec__caskbottles .caskbottles__content .caskbottles__detail {
+    margin-top: 3em;
+    margin-left: 2em; }
+    .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles {
+      margin-top: 2em; }
+      .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a {
+        border: 2px solid #ee368c;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ee368c;
+        padding: 8px 15px;
+        border-radius: 1em;
+        background-color: #ffffff;
+        letter-spacing: 0.1em; }
+        .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a:hover {
+          background-color: #ee368c;
+          color: #ffffff;
+          transition: background-color 0.5s; }
 
-.sec__caskbottles .caskbottles__content h2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #ee368c;
-  padding-bottom: 1em; }
-  @media (max-width: 767px) {
-    .sec__caskbottles .caskbottles__content h2 {
-      font-size: 20px; } }
-
-.sec__caskbottles .caskbottles__content .caskbottles__detail {
-  margin-top: 3em;
-  margin-left: 2em; }
-  .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles {
-    margin-top: 2em; }
-    .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a {
-      border: 2px solid #ee368c;
-      text-transform: uppercase;
+.sec__membership {
+  background-color: #f0f0f0; }
+  .sec__membership .membership__content {
+    text-align: center; }
+    .sec__membership .membership__content h2 {
+      font-size: 30px;
       font-weight: 700;
-      font-size: 13px;
       color: #ee368c;
-      padding: 8px 15px;
-      border-radius: 1em;
-      background-color: #ffffff;
-      letter-spacing: 0.1em; }
-      .sec__caskbottles .caskbottles__content .caskbottles__detail .btn__caskbottles a:hover {
+      text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .sec__membership .membership__content h2 {
+          font-size: 20px; } }
+  .sec__membership .sec__slide--membership {
+    margin-top: 2em; }
+    .sec__membership .sec__slide--membership .swiper-button-next, .sec__membership .sec__slide--membership .swiper-button-prev {
+      color: #ee368c;
+      transform: translateY(150%);
+      width: 45px;
+      height: 45px;
+      font-weight: 700; }
+    .sec__membership .sec__slide--membership .swiper-container {
+      text-align: center;
+      margin-top: 2em; }
+      .sec__membership .sec__slide--membership .swiper-container .swiper-pagination-bullet {
         background-color: #ee368c;
-        color: #ffffff;
-        transition: background-color 0.5s; }
+        width: 15px;
+        height: 15px; }
+    .sec__membership .sec__slide--membership .swiper__membership {
+      overflow: hidden;
+      position: relative;
+      width: 80vw;
+      margin: 0 auto; }
+      .sec__membership .sec__slide--membership .swiper__membership .swiper-slide {
+        height: auto; }
+        .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk {
+          border-radius: 15px; }
+          .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-header {
+            box-shadow: none;
+            padding: 1em 1em;
+            text-align: center;
+            display: block; }
+            .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-header p {
+              text-transform: uppercase; }
+            .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-header h2 {
+              font-size: 18px;
+              font-weight: 700;
+              color: #ee368c;
+              text-transform: uppercase; }
+              @media (max-width: 767px) {
+                .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-header h2 {
+                  font-size: 15px; } }
+          .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content {
+            text-align: center; }
+            .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .content {
+              text-align: center;
+              position: relative;
+              min-height: 150px; }
+              .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .content small {
+                color: #8c8d8e; }
+              .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .content h3 {
+                font-size: 18px;
+                font-weight: bold;
+                color: #ee368c;
+                margin: 2.5em 0em; }
+                @media (max-width: 767px) {
+                  .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .content h3 {
+                    font-size: 15px; } }
+            .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a {
+              border: 2px solid #ee368c;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 13px;
+              color: #ee368c;
+              padding: 8px 15px;
+              border-radius: 1em;
+              background-color: #ffffff;
+              letter-spacing: 0.1em;
+              background-color: #ee368c;
+              color: #ffffff;
+              padding: 8px 40px; }
+              .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a:hover {
+                background-color: #ee368c;
+                color: #ffffff;
+                transition: background-color 0.5s; }
+              .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a:hover {
+                background-color: #ffffff;
+                color: #ee368c; }
+    @media (max-width: 767px) {
+      .sec__membership .sec__slide--membership .swiper-button-next, .sec__membership .sec__slide--membership .swiper-button-prev {
+        display: none; }
+      .sec__membership .sec__slide--membership .swiper__membership {
+        width: 100%; }
+        .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a {
+          padding: 8px 15px; } }
 
 /*# sourceMappingURL=style.css.map */

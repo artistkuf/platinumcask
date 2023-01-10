@@ -27,7 +27,7 @@
 
     .swiper__content {
       z-index: 20;
-      margin: 0px 40px;
+      margin: 0px 4em;
       h2 {
         @include HeadSize();
         color: $white;
@@ -65,7 +65,7 @@
   background-repeat: no-repeat;
   .blk__invwhiskey {
     max-width: 500px;
-    h2 {
+    h1 {
       @include TitleSize();
       font-weight: $bold;
       color: $pink;
@@ -93,6 +93,10 @@
 }
 
 .sec__caskbottles{
+  background-image: url('/assets/img/bg-single-cask.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
   .blk__caskbottles{
     padding: 2rem 4rem;
     display: flex;
@@ -156,5 +160,113 @@
     }
   }
 
+
+}
+
+.sec__membership{
+  background-color: $light-gray;
+  .membership__content{
+    text-align: center;
+    h2{
+      @include TitleSize();
+      font-weight: $bold;
+      color: $pink;
+      text-transform: uppercase;
+    }
+  }
+
+  .sec__slide--membership{
+    margin-top: 2em;
+    .swiper-button-next, .swiper-button-prev{
+      color: $pink;
+      transform: translateY(150%);
+      width: 45px;
+      height: 45px;
+      font-weight: $bold;
+    }
+
+    .swiper-container{
+      text-align: center;
+      margin-top: 2em;
+      .swiper-pagination-bullet{
+        background-color: $pink;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .swiper__membership{
+      overflow: hidden;
+      position: relative;
+      width: 80vw;
+      margin: 0 auto;
+
+      .swiper-slide {
+        height: auto;
+        .membership__blk {
+          border-radius: 15px;
+          .card-header{
+            box-shadow: none;
+            padding: 1em 1em;
+            text-align: center;
+            display: block;
+            p{text-transform: uppercase}
+            h2{
+              @include TopicSize();
+              font-weight: $bold;
+              color: $pink;
+              text-transform: uppercase;
+            }
+          }
+          .card-content{
+            text-align: center;
+            .content{
+              text-align: center;
+              position: relative;
+              min-height: 150px;
+              small{
+                color: $gray;
+              }
+              h3{
+                @include TopicSize();
+                font-weight: bold;
+                color: $pink;
+                margin: 2.5em 0em
+              }
+            }
+            .btn__membership{
+              a{
+                @include ButtonTemp();
+                background-color: $pink;
+                color: $white;
+                padding: 8px 40px;
+                &:hover{
+                  background-color: $white;
+                  color: $pink;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @include media-query(mobile){
+      .swiper-button-next, .swiper-button-prev{display: none;}
+      .swiper__membership{
+        width: 100%;
+        .swiper-slide {
+          .membership__blk{
+            .card-content{
+              .btn__membership{
+                a{
+                  padding: 8px 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
