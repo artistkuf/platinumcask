@@ -429,4 +429,127 @@ body {
     .sec__seenin .blk__seein .badge__icon {
       width: 20%; } }
 
+.sec__howitworks--slide {
+  background-color: #000000;
+  padding-top: 8em; }
+  .sec__howitworks--slide .swiper-button-next, .sec__howitworks--slide .swiper-button-prev {
+    color: #ee368c;
+    width: 45px;
+    height: 45px;
+    font-weight: 700; }
+  .sec__howitworks--slide .swiper-container {
+    text-align: center;
+    margin-top: 2em; }
+    .sec__howitworks--slide .swiper-container .swiper-pagination-bullet {
+      background-color: #ee368c;
+      width: 15px;
+      height: 15px; }
+  .sec__howitworks--slide .swiper__howitworks {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    .sec__howitworks--slide .swiper__howitworks .slide__howitworks .ele__content {
+      text-align: center; }
+      .sec__howitworks--slide .swiper__howitworks .slide__howitworks .ele__content p {
+        color: #ffffff; }
+    .sec__howitworks--slide .swiper__howitworks .slide__howitworks .ele__image {
+      margin-top: 2em;
+      text-align: center; }
+  @media (max-width: 767px) {
+    .sec__howitworks--slide .swiper-button-next, .sec__howitworks--slide .swiper-button-prev {
+      display: none; } }
+
+.sec__caskfractions {
+  background-color: #f0f0f0; }
+  .sec__caskfractions .blk__caskfractions {
+    background-color: #ffffff;
+    border-radius: 20px; }
+    .sec__caskfractions .blk__caskfractions .ele__caskfractions {
+      text-align: center; }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions h1, .sec__caskfractions .blk__caskfractions .ele__caskfractions h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #ee368c;
+        text-transform: uppercase; }
+        @media (max-width: 767px) {
+          .sec__caskfractions .blk__caskfractions .ele__caskfractions h1, .sec__caskfractions .blk__caskfractions .ele__caskfractions h2 {
+            font-size: 20px; } }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 1em 0em; }
+        @media (max-width: 767px) {
+          .sec__caskfractions .blk__caskfractions .ele__caskfractions h3 {
+            font-size: 15px; } }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions p {
+        margin: 1em 0; }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions hr {
+        background-color: #ee368c; }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions {
+        margin: 3em 0; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions a {
+          border: 2px solid #ee368c;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 13px;
+          color: #ee368c;
+          padding: 8px 15px;
+          border-radius: 1em;
+          background-color: #ffffff;
+          letter-spacing: 0.1em; }
+          .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions a:hover {
+            background-color: #ee368c;
+            color: #ffffff;
+            transition: background-color 0.5s; }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote {
+        margin-top: 2em; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::before, .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::after {
+          content: '"';
+          font-size: 30px;
+          font-weight: 700; }
+          @media (max-width: 767px) {
+            .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::before, .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::after {
+              font-size: 20px; } }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote blockquote {
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: 1px; }
+          @media (max-width: 767px) {
+            .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote blockquote {
+              font-size: 15px; } }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions {
+        margin: 3em 0;
+        text-align: left;
+        position: relative; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions h3 {
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase; }
+          @media (max-width: 767px) {
+            .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions h3 {
+              font-size: 15px; } }
+          .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions h3 span {
+            font-size: 30px;
+            color: #ee368c; }
+            @media (max-width: 767px) {
+              .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions h3 span {
+                font-size: 20px; } }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions p {
+          color: #8c8d8e;
+          height: 65%; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions .hidden__pc {
+          display: none; }
+  @media (max-width: 767px) {
+    .sec__caskfractions .blk__caskfractions .ele__caskfractions p {
+      text-align: left;
+      text-indent: 1em; }
+    .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions .hidden__pc {
+      display: block; }
+    .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__questions p {
+      height: auto; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,127 @@
+.sec__howitworks--slide{
+   background-color: $black;
+   padding-top: 8em;
+   .swiper-button-next, .swiper-button-prev{
+      color: $pink;
+      width: 45px;
+      height: 45px;
+      font-weight: $bold;
+    }
+    .swiper-container{
+      text-align: center;
+      margin-top: 2em;
+      .swiper-pagination-bullet{
+        background-color: $pink;
+        width: 15px;
+        height: 15px;
+      }
+    }
+   .swiper__howitworks{
+      width: 80vw;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      .slide__howitworks{
+         .ele__content{
+            text-align: center;
+            p{color: $white;}
+         }
+         .ele__image{
+            margin-top: 2em;
+            text-align: center;
+         }
+      }
+   }
+
+   @include media-query(mobile){
+      .swiper-button-next, .swiper-button-prev{display: none;}
+   }
+}
+
+.sec__caskfractions{
+   background-color: $light-gray;
+   .blk__caskfractions{
+      background-color: $white;
+      border-radius: 20px;
+      .ele__caskfractions{
+         text-align: center;
+         h1,h2{
+            @include TitleSize();
+            font-weight: $bold;
+            color: $pink;
+            text-transform: uppercase
+         }
+         h3{
+            @include TopicSize();
+            font-weight: $bold;
+            text-transform: uppercase;
+            margin: 1em 0em;
+         }
+         p{
+            margin: 1em 0;
+         }
+         hr{
+            background-color: $pink;
+         }
+         .btn__caskfractions{
+            margin: 3em 0;
+            a{
+              @include ButtonTemp();
+            }
+         }
+
+         .caskfractions__quote{
+            margin-top: 2em;
+            ::before, ::after{
+               content: '"';
+               @include TitleSize();
+               font-weight: $bold;
+            }
+            blockquote{
+               font-weight: $bold;
+               text-transform: uppercase;
+               @include TopicSize();
+               line-height: 30px;
+               letter-spacing: 1px;
+            }
+         }
+
+         .caskfractions__questions{
+            margin: 3em 0;  
+            text-align: left;
+            position: relative;
+            h3{
+               @include TopicSize();
+               font-weight: $bold;
+               text-transform: uppercase;
+               span{
+                  @include TitleSize();
+                  color: $pink;
+               }
+            }
+            p{
+               color: $gray;
+               height: 65%
+            }
+            .hidden__pc{display: none;}
+         }
+      }
+   }
+
+   @include media-query (mobile){
+      .blk__caskfractions{
+         .ele__caskfractions{
+            p{
+               text-align: left;
+               text-indent: 1em;
+            }
+       
+            .caskfractions__questions{
+               .hidden__pc{display: block;}
+               p{height: auto;}
+            }
+         }
+      }
+
+   }
+}
