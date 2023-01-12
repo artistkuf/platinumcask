@@ -1,9 +1,9 @@
 .sec__aboutus--header{
-   padding: 25em 0em;
+   padding: 20em 0em;
    background-image: url('/assets/img/bg-about-us.svg');
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
+   background-position: bottom;
    .blk__header{
       text-align: center;
       h1{
@@ -31,7 +31,7 @@
 }
 
 .sec__aboutus--content{
-   margin-top: -20em;
+   margin-top: -15em;
    .card{
       border-radius: 50px;
       .card-header{
