@@ -745,6 +745,29 @@ body {
         padding: 5px 10px; }
         .sec__form .table-container table th button:hover, .sec__form .table-container table td button:hover {
           cursor: pointer; }
+  .sec__form .ele__btn .btn__update {
+    margin-bottom: 0px; }
+    .sec__form .ele__btn .btn__update button {
+      margin: 10px; }
+  .sec__form .ele__btn .btn__cancle {
+    margin-bottom: 0px; }
+    .sec__form .ele__btn .btn__cancle button {
+      margin: 10px;
+      background-color: #8c8d8e;
+      border-color: #8c8d8e; }
+      .sec__form .ele__btn .btn__cancle button:hover {
+        background-color: #323232;
+        border-color: #323232;
+        color: #ffffff; }
+  .sec__form .upload__file {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px; }
+    .sec__form .upload__file .file-name {
+      color: #8c8d8e; }
+    .sec__form .upload__file .file-cta {
+      background-color: #ee368c;
+      color: #ffffff; }
   @media (max-width: 767px) {
     .sec__form .table-container {
       border-radius: 20px; }
