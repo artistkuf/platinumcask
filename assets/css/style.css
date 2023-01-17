@@ -174,7 +174,8 @@ body {
       font-size: 30px;
       color: #ffffff;
       font-weight: 700;
-      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25); }
+      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+      margin: 0px; }
       @media (max-width: 767px) {
         .swiper__herobanner .swiper-slide .swiper__content p {
           font-size: 20px; } }
@@ -319,7 +320,8 @@ body {
           font-size: 20px; } }
   .sec__membership .sec__slide--membership {
     margin-top: 2em; }
-    .sec__membership .sec__slide--membership .swiper-button-next, .sec__membership .sec__slide--membership .swiper-button-prev {
+    .sec__membership .sec__slide--membership .swiper-button-next,
+    .sec__membership .sec__slide--membership .swiper-button-prev {
       color: #ee368c;
       transform: translateY(150%);
       width: 45px;
@@ -393,7 +395,8 @@ body {
                 background-color: #ffffff;
                 color: #ee368c; }
     @media (max-width: 767px) {
-      .sec__membership .sec__slide--membership .swiper-button-next, .sec__membership .sec__slide--membership .swiper-button-prev {
+      .sec__membership .sec__slide--membership .swiper-button-next,
+      .sec__membership .sec__slide--membership .swiper-button-prev {
         display: none; }
       .sec__membership .sec__slide--membership .swiper__membership {
         width: 100%; }
@@ -644,5 +647,139 @@ body {
         padding: 3em; }
       .sec__aboutus--content .card .card-content {
         padding: 3em; } }
+
+.sec__form {
+  background-color: #f0f0f0;
+  padding-top: 10em;
+  text-align: center; }
+  .sec__form h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ee368c;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .sec__form h1 {
+        font-size: 20px; } }
+  .sec__form h2 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .sec__form h2 {
+        font-size: 15px; } }
+    .sec__form h2 strong {
+      color: #ee368c; }
+  .sec__form form {
+    margin-top: 3em; }
+    .sec__form form .column {
+      margin-bottom: 0em;
+      padding-bottom: 0em; }
+  .sec__form input,
+  .sec__form textarea,
+  .sec__form select {
+    color: #000000;
+    border: 1px solid #8c8d8e;
+    border-radius: 10px; }
+    .sec__form input::placeholder,
+    .sec__form textarea::placeholder,
+    .sec__form select::placeholder {
+      letter-spacing: 2px;
+      color: #8c8d8e; }
+    .sec__form input:active, .sec__form input:focus,
+    .sec__form textarea:active,
+    .sec__form textarea:focus,
+    .sec__form select:active,
+    .sec__form select:focus {
+      border-color: #ee368c; }
+  .sec__form .select {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+    .sec__form .select:not(.is-multiple):not(.is-loading)::after {
+      border-color: #323232; }
+  .sec__form button {
+    border: 2px solid #ee368c;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ee368c;
+    padding: 8px 15px;
+    border-radius: 1em;
+    background-color: #ffffff;
+    letter-spacing: 0.1em;
+    margin: 1em 0;
+    font-size: 18px;
+    background-color: #ee368c;
+    color: #ffffff;
+    padding: 8px 30px; }
+    .sec__form button:hover {
+      background-color: #ee368c;
+      color: #ffffff;
+      transition: background-color 0.5s; }
+    @media (max-width: 767px) {
+      .sec__form button {
+        font-size: 15px; } }
+    .sec__form button:hover {
+      background-color: #ffffff;
+      color: #ee368c;
+      border-color: #ee368c; }
+  .sec__form hr {
+    background-color: #ee368c;
+    height: 1px;
+    width: 90%;
+    margin: 2em auto; }
+  .sec__form .ele__txt--detail {
+    margin: 1em auto;
+    max-width: 600px; }
+  .sec__form .ele__logo {
+    margin-bottom: 4em; }
+    .sec__form .ele__logo img {
+      width: 250px; }
+  .sec__form .ele__txt--form {
+    text-align: left; }
+  .sec__form .table-container {
+    border-radius: 20px; }
+    .sec__form .table-container table th, .sec__form .table-container table td {
+      vertical-align: middle; }
+      .sec__form .table-container table th button, .sec__form .table-container table td button {
+        font-size: 11px;
+        padding: 5px 10px; }
+        .sec__form .table-container table th button:hover, .sec__form .table-container table td button:hover {
+          cursor: pointer; }
+  @media (max-width: 767px) {
+    .sec__form .table-container {
+      border-radius: 20px; }
+      .sec__form .table-container table {
+        width: 500px; } }
+
+.sec__content {
+  background-color: #f0f0f0;
+  padding-top: 8em; }
+  .sec__content .container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 2em; }
+    .sec__content .container h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ee368c;
+      text-align: center;
+      margin-top: 1em; }
+      @media (max-width: 767px) {
+        .sec__content .container h2 {
+          font-size: 20px; } }
+    .sec__content .container h3 {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .sec__content .container h3 {
+          font-size: 15px; } }
+    .sec__content .container hr {
+      background-color: #ee368c;
+      height: 1px;
+      width: 90%;
+      margin: 2em auto; }
+    .sec__content .container a {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,145 @@
+.sec__form {
+  background-color: $light-gray;
+  padding-top: 10em;
+  text-align: center;
+
+  h1 {
+    @include TitleSize();
+    font-weight: $bold;
+    color: $pink;
+    text-transform: uppercase;
+  }
+  h2 {
+    @include TopicSize();
+    font-weight: $light;
+    text-transform: uppercase;
+    strong{
+      color: $pink;
+    }
+  }
+
+  form {
+    margin-top: 3em;
+    .column{
+      margin-bottom: 0em;
+      padding-bottom: 0em;
+    }
+   }
+
+    input,
+    textarea,
+    select {
+      color: $black;
+      border: 1px solid $gray;
+      border-radius: 10px;
+      &::placeholder {
+        letter-spacing: 2px;
+        color: $gray;
+      }
+      &:active,
+      &:focus {
+        border-color: $pink;
+      }
+    }
+
+    .select {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      &:not(.is-multiple):not(.is-loading)::after{
+        border-color: $dark-gray;
+      }
+    }
+
+    button {
+      @include ButtonTemp();
+      margin: 1em 0;
+      @include TopicSize();
+      background-color: $pink;
+      color: $white;
+      padding: 8px 30px;
+      &:hover{
+         background-color: $white;
+         color: $pink;
+         border-color: $pink;
+      }
+    }
+
+    hr{
+      background-color: $pink;
+      height: 1px;
+      width: 90%;
+      margin: 2em auto;
+    }
+
+  .ele__txt--detail{
+   margin: 1em auto;
+   max-width: 600px;
+  }
+  .ele__logo{
+   margin-bottom: 4em;
+   img{width: 250px;}
+  }
+  
+  .ele__txt--form{
+    text-align: left;
+  }
+
+  .table-container{
+    border-radius: 20px;
+    table{
+      th,td{
+        vertical-align: middle;
+        button{
+          font-size: ($fontSize)-2;
+          padding: 5px 10px;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-query(mobile){
+    .table-container{
+      border-radius: 20px;
+      table{
+        width: 500px;
+      }
+    }
+  }
+
+}
+
+
+.sec__content{
+  background-color: $light-gray;
+  padding-top: 8em;
+  .container{
+    background-color: $white;
+    border-radius: 30px;
+    padding: 2em;
+    h2{
+      @include TitleSize();
+      font-weight: $bold;
+      color: $pink;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    h3{
+      @include TopicSize();
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
+    
+    hr{
+      background-color: $pink;
+      height: 1px;
+      width: 90%;
+      margin: 2em auto;
+    }
+
+    a{display: block;}
+  }
+}
