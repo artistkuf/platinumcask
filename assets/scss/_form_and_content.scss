@@ -153,7 +153,6 @@
   .container{
     background-color: $white;
     border-radius: 30px;
-    padding: 2em;
     h2{
       @include TitleSize();
       font-weight: $bold;
