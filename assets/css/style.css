@@ -166,7 +166,8 @@ body {
       font-size: 60px;
       color: #ffffff;
       font-weight: 700;
-      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25); }
+      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+      text-transform: uppercase; }
       @media (max-width: 767px) {
         .swiper__herobanner .swiper-slide .swiper__content h2 {
           font-size: 40px; } }
