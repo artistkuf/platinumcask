@@ -805,4 +805,48 @@ body {
     .sec__content .container a {
       display: block; }
 
+.sec__information {
+  padding-top: 8em;
+  background-color: #f0f0f0; }
+  .sec__information .blk__information {
+    background-color: #ffffff;
+    border-radius: 20px; }
+    .sec__information .blk__information .ele__information h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ee368c;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .sec__information .blk__information .ele__information h1 {
+          font-size: 20px; } }
+    .sec__information .blk__information .ele__information h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ee368c; }
+      @media (max-width: 767px) {
+        .sec__information .blk__information .ele__information h2 {
+          font-size: 15px; } }
+    .sec__information .blk__information .ele__information h3 {
+      text-align: center;
+      color: #ee368c; }
+    .sec__information .blk__information .ele__information p strong {
+      font-weight: 700;
+      color: #ee368c; }
+    .sec__information .blk__information .ele__information hr {
+      background-color: #ee368c;
+      height: 1px;
+      margin: 3em; }
+    .sec__information .blk__information .ele__information ol, .sec__information .blk__information .ele__information ul {
+      margin-left: 2em; }
+      .sec__information .blk__information .ele__information ol strong, .sec__information .blk__information .ele__information ul strong {
+        color: #ee368c; }
+    .sec__information .blk__information .ele__information ul {
+      list-style: disc; }
+    .sec__information .blk__information .ele__information table thead tr th {
+      text-align: center;
+      vertical-align: middle; }
+    .sec__information .blk__information .ele__information table tbody tr td {
+      vertical-align: middle; }
+
 /*# sourceMappingURL=style.css.map */

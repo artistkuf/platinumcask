@@ -1,0 +1,66 @@
+.sec__information{
+   padding-top: 8em;
+   background-color: $light-gray;
+
+   .blk__information{
+      background-color: $white;
+      border-radius: 20px;
+
+      .ele__information{
+         h1{
+            @include TitleSize();
+            font-weight: $bold;
+            color: $pink;
+            text-transform: uppercase;
+            text-align: center;
+         }
+         h2{
+            @include TopicSize();
+            font-weight: $bold;
+            color: $pink;
+         }
+         h3{
+            text-align: center;
+            color: $pink;
+         }
+         p{
+            strong{
+               font-weight: $bold;
+               color: $pink;
+            }
+         }
+
+         hr{
+            background-color: $pink;
+            height: 1px;
+            margin: 3em;
+         }
+
+         ol,ul{
+            margin-left: 2em;
+            strong{color: $pink;}
+         }
+         ul{
+            list-style: disc;
+         }
+
+         table{
+            thead{
+               tr{
+                  th{
+                     text-align: center;
+                     vertical-align: middle;
+                  }
+               }
+            }
+            tbody{
+               tr{
+                  td{
+                     vertical-align: middle;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
