@@ -25,9 +25,6 @@ var HeroBannerSwiper = new Swiper(".swiper__herobanner", {
 
 
 var MembershipSwiper = new Swiper('.swiper__membership', {
-  slidesPerView: 4,
-  spaceBetween: 50,
-  draggable: true,
   pagination: {
     el: '.swiper-container',
     type: 'bullets',
@@ -42,16 +39,16 @@ var MembershipSwiper = new Swiper('.swiper__membership', {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 4,
-      spaceBetween: 50,
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
   },
 });
@@ -75,4 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
 

@@ -199,7 +199,7 @@
     .swiper__membership {
       overflow: hidden;
       position: relative;
-      width: 80vw;
+      width: 50vw;
       margin: 0 auto;
 
       .swiper-slide {
@@ -253,7 +253,7 @@
         }
       }
     }
-    @include media-query(mobile) {
+    @include media-query(tablet) {
       .swiper-button-next,
       .swiper-button-prev {
         display: none;

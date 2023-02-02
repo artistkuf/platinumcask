@@ -338,7 +338,7 @@ body {
     .sec__membership .sec__slide--membership .swiper__membership {
       overflow: hidden;
       position: relative;
-      width: 80vw;
+      width: 50vw;
       margin: 0 auto; }
       .sec__membership .sec__slide--membership .swiper__membership .swiper-slide {
         height: auto; }
@@ -395,7 +395,7 @@ body {
               .sec__membership .sec__slide--membership .swiper__membership .swiper-slide .membership__blk .card-content .btn__membership a:hover {
                 background-color: #ffffff;
                 color: #ee368c; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .sec__membership .sec__slide--membership .swiper-button-next,
       .sec__membership .sec__slide--membership .swiper-button-prev {
         display: none; }
@@ -848,5 +848,55 @@ body {
       vertical-align: middle; }
     .sec__information .blk__information .ele__information table tbody tr td {
       vertical-align: middle; }
+
+.sec__bannershop {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  padding-bottom: 10px; }
+  .sec__bannershop .list_shoplink {
+    height: 30vh;
+    position: relative; }
+    .sec__bannershop .list_shoplink .shop__link {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center; }
+      .sec__bannershop .list_shoplink .shop__link a {
+        padding: 0 20px;
+        color: #ffffff;
+        font-weight: 400; }
+        .sec__bannershop .list_shoplink .shop__link a:hover {
+          text-decoration: underline; }
+  @media (max-width: 767px) {
+    .sec__bannershop .list_shoplink .shop__link {
+      transform: translate(-50%, -10%); }
+      .sec__bannershop .list_shoplink .shop__link a {
+        display: block;
+        margin: 10px 0; } }
+
+.sec__product .product__header h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ee368c; }
+  @media (max-width: 767px) {
+    .sec__product .product__header h2 {
+      font-size: 20px; } }
+
+.sec__product .product__header hr {
+  background-color: #ee368c;
+  height: 1px; }
+
+.sec__product .colums__product {
+  display: flex; }
+  .sec__product .colums__product .column {
+    display: flex;
+    flex-direction: column; }
+    .sec__product .colums__product .column .product__content {
+      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
