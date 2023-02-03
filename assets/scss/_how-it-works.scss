@@ -57,6 +57,12 @@
             text-transform: uppercase;
             margin: 1em 0em;
          }
+         h4{
+            @include TitleSize;
+            font-weight: $bold;
+            color: $pink;
+            margin-top: 2em;
+         }
          p{
             margin: 1em 0;
          }
@@ -87,7 +93,7 @@
          }
 
          .caskfractions__questions{
-            margin: 3em 0;  
+            margin: 0;  
             text-align: left;
             position: relative;
             h3{
@@ -104,6 +110,18 @@
                height: 65%
             }
             .hidden__pc{display: none;}
+         }
+         .content__purchase{
+            text-align: left;
+            ol{
+               margin-left: 2em;
+               line-height: 2em;
+            }
+            ul{
+               margin-left: 2em;
+               line-height: 2em;
+               list-style-type: disc;
+            }
          }
       }
    }
