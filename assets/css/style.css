@@ -488,7 +488,8 @@ body {
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
-        margin: 1em 0em; }
+        margin-top: 3em;
+        color: #ee368c; }
         @media (max-width: 767px) {
           .sec__caskfractions .blk__caskfractions .ele__caskfractions h3 {
             font-size: 15px; } }
@@ -502,6 +503,8 @@ body {
             font-size: 20px; } }
       .sec__caskfractions .blk__caskfractions .ele__caskfractions p {
         margin: 1em 0; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions p b {
+          color: #ee368c; }
       .sec__caskfractions .blk__caskfractions .ele__caskfractions hr {
         background-color: #ee368c; }
       .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions {
@@ -515,11 +518,24 @@ body {
           padding: 8px 15px;
           border-radius: 1em;
           background-color: #ffffff;
-          letter-spacing: 0.1em; }
+          letter-spacing: 0.1em;
+          background-color: #ee368c;
+          color: #ffffff; }
           .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions a:hover {
             background-color: #ee368c;
             color: #ffffff;
             transition: background-color 0.5s; }
+          .sec__caskfractions .blk__caskfractions .ele__caskfractions .btn__caskfractions a:hover {
+            background-color: #ffffff;
+            color: #ee368c; }
+      .sec__caskfractions .blk__caskfractions .ele__caskfractions .txt__note {
+        margin-top: 2em;
+        color: #ee368c; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .txt__note strong {
+          color: #ee368c;
+          text-decoration: underline; }
+        .sec__caskfractions .blk__caskfractions .ele__caskfractions .txt__note p {
+          margin: 0; }
       .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote {
         margin-top: 2em; }
         .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::before, .sec__caskfractions .blk__caskfractions .ele__caskfractions .caskfractions__quote ::after {
