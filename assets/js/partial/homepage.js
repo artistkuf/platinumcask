@@ -63,11 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (caskBottlesTop + caskBottlesHeight >= windowTop && caskBottlesTop <= windowTop + window.innerHeight) {
       var caskBottlesImages = caskBottles.querySelectorAll('img');
       for (var i = 0; i < caskBottlesImages.length; i++) {
-        caskBottlesImages[0].classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-0.5s');
-        caskBottlesImages[1].classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-0.9s');
-        caskBottlesImages[2].classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-0.5s');
-        caskBottlesImages[3].classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-0.9s');
-        caskBottlesImages[4].classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-0.5s');
+        caskBottlesImages[0].classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-1s');
+        caskBottlesImages[1].classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-1s');
+        caskBottlesImages[2].classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s');
+        caskBottlesImages[3].classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-1s');
+        caskBottlesImages[4].classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-1s');
       }
     }
   });
