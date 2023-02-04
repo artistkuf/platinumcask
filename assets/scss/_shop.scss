@@ -127,7 +127,6 @@
       }
    }
 
-
    .swiper__product {
       overflow: hidden;
       position: relative;
@@ -149,11 +148,14 @@
          display: none;
       }
     }
+    .sec__slide--product{
+      position: relative;
+   }
     .swiper-button-next{
-      right: 20em;
+      right: 10em;
     }
     .swiper-button-prev{
-      left: 20em;
+      left: 10em;
     }
     .swiper-container {
       text-align: center;

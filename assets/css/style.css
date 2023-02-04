@@ -1018,10 +1018,12 @@ body {
       .sec__product--detail .swiper-button-next,
       .sec__product--detail .swiper-button-prev {
         display: none; } }
+  .sec__product--detail .sec__slide--product {
+    position: relative; }
   .sec__product--detail .swiper-button-next {
-    right: 20em; }
+    right: 10em; }
   .sec__product--detail .swiper-button-prev {
-    left: 20em; }
+    left: 10em; }
   .sec__product--detail .swiper-container {
     text-align: center;
     margin-top: 2em; }
