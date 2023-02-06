@@ -40,6 +40,7 @@
           font-weight: $bold;
           text-shadow: $TextShadow;
           margin: 0px;
+          text-transform: uppercase;
         }
         @include media-query(mobile) {
           margin: 0px 20px;
@@ -61,11 +62,11 @@
   }
 
 
-.sec__invwhiskey {
+.sec__invWhisky {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  .blk__invwhiskey {
+  .blk__invWhisky {
     max-width: 500px;
     h1 {
       @include TitleSize();
@@ -75,7 +76,7 @@
     p {
       color: $white;
     }
-    .btn__invwhiskey {
+    .btn__invWhisky {
       margin: 2em 0;
       a {
         @include ButtonTemp();

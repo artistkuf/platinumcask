@@ -176,7 +176,8 @@ body {
       color: #ffffff;
       font-weight: 700;
       text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
-      margin: 0px; }
+      margin: 0px;
+      text-transform: uppercase; }
       @media (max-width: 767px) {
         .swiper__herobanner .swiper-slide .swiper__content p {
           font-size: 20px; } }
@@ -201,24 +202,24 @@ body {
   width: 10px;
   height: 10px; }
 
-.sec__invwhiskey {
+.sec__invWhisky {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
-  .sec__invwhiskey .blk__invwhiskey {
+  .sec__invWhisky .blk__invWhisky {
     max-width: 500px; }
-    .sec__invwhiskey .blk__invwhiskey h1 {
+    .sec__invWhisky .blk__invWhisky h1 {
       font-size: 30px;
       font-weight: 700;
       color: #ee368c; }
       @media (max-width: 767px) {
-        .sec__invwhiskey .blk__invwhiskey h1 {
+        .sec__invWhisky .blk__invWhisky h1 {
           font-size: 20px; } }
-    .sec__invwhiskey .blk__invwhiskey p {
+    .sec__invWhisky .blk__invWhisky p {
       color: #ffffff; }
-    .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey {
+    .sec__invWhisky .blk__invWhisky .btn__invWhisky {
       margin: 2em 0; }
-      .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a {
+      .sec__invWhisky .blk__invWhisky .btn__invWhisky a {
         border: 2px solid #ee368c;
         text-transform: uppercase;
         font-weight: 700;
@@ -231,14 +232,14 @@ body {
         background-color: black;
         border: 2px solid #ffffff;
         color: #ffffff; }
-        .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a:hover {
+        .sec__invWhisky .blk__invWhisky .btn__invWhisky a:hover {
           background-color: #ee368c;
           color: #ffffff;
           transition: background-color 0.5s; }
-        .sec__invwhiskey .blk__invwhiskey .btn__invwhiskey a:hover {
+        .sec__invWhisky .blk__invWhisky .btn__invWhisky a:hover {
           background-color: #323232; }
   @media (max-width: 767px) {
-    .sec__invwhiskey {
+    .sec__invWhisky {
       background-position: revert; } }
 
 .sec__caskbottles {
